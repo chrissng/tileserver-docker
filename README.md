@@ -1,4 +1,6 @@
 # Tileserver-docker
+[![Docker stars](https://img.shields.io/docker/stars/datagovsg/tileserver-docker.svg)](https://hub.docker.com/r/datagovsg/tileserver/)
+[![Docker pulls](https://img.shields.io/docker/pulls/datagovsg/tileserver-docker.svg)](https://hub.docker.com/r/datagovsg/tileserver/)
 
 Get a vector tile server up and running quickly with Singapore data and custom styling from Mapbox Studio
 
