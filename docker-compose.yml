@@ -1,0 +1,10 @@
+version: '2'
+services:
+  tileserver:
+    image: chrissng/tileserver-gl:v1.1.5
+    ports:
+      - 8080:80
+    restart: always
+    volumes:
+      - ./export:/data
+      - ./tileserver-gl-styles:/usr/src/app/node_modules/tileserver-gl-styles
