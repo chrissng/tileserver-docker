@@ -2949,49 +2949,96 @@
             "source-layer": "water_label"
         },
         {
-            "interactive": true,
-            "minzoom": 16,
-            "layout": {
-                "icon-image": "{maki}-11",
-                "text-font": [
-                    "Open Sans Semibold"
-                ],
-                "text-field": "{name_en}",
-                "text-max-width": 9,
-                "text-padding": 2,
-                "text-offset": [
-                    0,
-                    0.6
-                ],
-                "text-anchor": "top",
-                "text-size": 12
-            },
-            "metadata": {
-                "mapbox:group": "1444849297111.495"
-            },
-            "filter": [
-                "all",
-                [
-                    "==",
-                    "$type",
-                    "Point"
-                ],
-                [
-                    "==",
-                    "scalerank",
-                    4
-                ]
+          "minzoom": 16,
+          "layout": {
+            "icon-image": "{maki}-11",
+            "text-font": [
+              "Open Sans Semibold"
             ],
-            "type": "symbol",
-            "source": "mapbox",
-            "id": "poi_label_4",
-            "paint": {
-                "text-color": "#666",
-                "text-halo-color": "#ffffff",
-                "text-halo-width": 1,
-                "text-halo-blur": 0.5
-            },
-            "source-layer": "poi_label"
+            "text-field": "{name_en}",
+            "text-max-width": 9,
+            "text-padding": 2,
+            "text-offset": [
+              0,
+              0.6
+            ],
+            "text-anchor": "top",
+            "text-size": 12,
+            "visibility": "visible",
+            "icon-padding": 2
+          },
+          "metadata": {
+            "mapbox:group": "1444849297111.495"
+          },
+          "filter": [
+            "all",
+            [
+              ">=",
+              "scalerank",
+              4
+            ],
+            [
+              "==",
+              "type",
+              "Bus Stop"
+            ]
+          ],
+          "type": "symbol",
+          "source": "mapbox",
+          "id": "poi_label_4_bus_stop",
+          "paint": {
+            "text-color": "rgba(102, 102, 102, 1)",
+            "text-halo-color": "#ffffff",
+            "text-halo-width": 0.5,
+            "text-halo-blur": 0
+          },
+          "source-layer": "poi_label"
+        },
+        {
+          "minzoom": 16,
+          "layout": {
+            "icon-image": "",
+            "text-font": [
+              "Open Sans Regular"
+            ],
+            "text-field": "{name_en}",
+            "text-max-width": 9,
+            "text-padding": 2,
+            "text-offset": [
+              0,
+              0
+            ],
+            "text-anchor": "top",
+            "text-size": 10,
+            "visibility": "visible",
+            "icon-padding": 0
+          },
+          "metadata": {
+            "mapbox:group": "1444849297111.495"
+          },
+          "filter": [
+            "all",
+            [
+              ">=",
+              "scalerank",
+              4
+            ],
+            [
+              "!=",
+              "type",
+              "Bus Stop"
+            ]
+          ],
+          "type": "symbol",
+          "source": "mapbox",
+          "id": "poi_label_4",
+          "paint": {
+            "text-color": "rgba(167, 136, 136, 1)",
+            "text-halo-color": "hsl(39, 41%, 86%)",
+            "text-halo-width": 0.5,
+            "text-halo-blur": 0
+          },
+          "source-layer": "poi_label"
         },
         {
             "interactive": true,
